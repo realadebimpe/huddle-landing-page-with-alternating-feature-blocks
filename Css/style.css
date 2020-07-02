@@ -15,4 +15,78 @@
 body{
     padding: 0;
     margin: 0;
+    font-family: poppins;
+}
+
+.build{
+    background-color: var(--Very-Pale-Cyan);
+    background-image: url('../images/bg-hero-mobile.svg');
+    background-repeat: no-repeat;
+    padding: 1em;
+}
+
+.header ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+ul li{
+    list-style-type: none;
+}
+
+.header button{
+    border: none;
+    background-color: #fff;
+    border-radius: 19px;
+    font-size: 14px;
+    padding: 6px 26px;
+    cursor:  pointer;
+}
+
+.home-hero{
+    text-align: center;
+
+}
+.home-hero-text h1{
+    font-size: 28px;
+    margin: 112px 0 0;
+    text-align: center;
+}
+
+.home-hero-text p{
+    font-size: 18px;
+    font-weight: 300;
+    margin: 40px 0;
+}
+
+.home-hero-text button{
+    border: none;
+    color: #fff;
+    background-color: var(--Pink);
+    border-radius: 20px;
+    font-size: 14px;
+    padding: 12px 68px;
+    cursor:  pointer;
+    margin-bottom: 40px;
+}
+
+.home-hero img{
+    width: 96%;
+}
+
+/* cards */
+.body-cards img{
+    width: 100%;
+    padding: 16px;
+}
+
+.card{
+    width: 86%;
+}
+
+.card h1 p{
+    text-align: center;
 }
