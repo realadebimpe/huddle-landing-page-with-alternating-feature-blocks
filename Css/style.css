@@ -83,6 +83,59 @@ ul li{
     padding: 16px;
 }
 
+
+@media screen and (min-width:768px){
+    
+    
+    
+    .header button{
+        border: none;
+        background-color: #fff;
+        border-radius: 19px;
+        font-size: 14px;
+        padding: 6px 26px;
+        cursor:  pointer;
+    }
+    
+    .home-hero{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+    }
+    .home-hero-text{
+        font-size: 28px;
+        width: 50%;
+    }
+    
+    .home-hero-text p{
+        font-size: 18px;
+        font-weight: 300;
+        margin: 40px 0;
+    }
+    
+    .home-hero-text button{
+       
+        font-size: 14px;
+        padding: 12px 68px;
+        cursor:  pointer;
+        margin-bottom: 40px;
+    }
+    
+    .hero-image{
+        width: 50%;
+        margin-top: 50px;
+    }
+    
+    /* cards */
+    .body-cards img{
+        width: 100%;
+        padding: 16px;
+    }
+}
+
+
 .card{
     width: 86%;
 }
