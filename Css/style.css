@@ -1,4 +1,4 @@
-@import url("");
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,400,600&display=swap');
 
 :root{
 /* ### Primary */
@@ -15,7 +15,7 @@
 body{
     padding: 0;
     margin: 0;
-    font-family: poppins;
+    font-family: 'poppins';
 }
 
 .build{
@@ -77,24 +77,12 @@ ul li{
     width: 96%;
 }
 
-/* cards */
-.body-cards img{
-    width: 100%;
-    padding: 16px;
-}
-
 
 @media screen and (min-width:768px){
-    
-    
-    
-    .header button{
-        border: none;
-        background-color: #fff;
-        border-radius: 19px;
-        font-size: 14px;
-        padding: 6px 26px;
-        cursor:  pointer;
+    .build{
+        background-image: url('../images/bg-hero-desktop.svg');
+        background-repeat: no-repeat;
+        padding: 2em;
     }
     
     .home-hero{
@@ -103,20 +91,24 @@ ul li{
         align-items: center;
         padding: 0;
         margin: 0;
+        text-align: left;
     }
+
+    .home-hero-text h1{
+       text-align: left ;
+    }
+
     .home-hero-text{
-        font-size: 28px;
-        width: 50%;
-    }
-    
+       padding-right: 3%;
+       width: 80%;
+     }
+ 
     .home-hero-text p{
-        font-size: 18px;
-        font-weight: 300;
-        margin: 40px 0;
+        margin:  20px 0;
+        
     }
     
     .home-hero-text button{
-       
         font-size: 14px;
         padding: 12px 68px;
         cursor:  pointer;
@@ -124,22 +116,259 @@ ul li{
     }
     
     .hero-image{
-        width: 50%;
-        margin-top: 50px;
+        margin-top: -5% ;
+        width: 83%;
+    }
+}
+
+
+@media screen and (min-width:1024px){
+    .build{
+        background-image: url('../images/bg-hero-desktop.svg');
+        background-repeat: no-repeat;
+        padding: 3em;
     }
     
-    /* cards */
-    .body-cards img{
-        width: 100%;
-        padding: 16px;
+    .header button{
+        border-radius: 20px;
+        font-size: 18px;
+        padding: 16px 64px;
+        font-weight: 200;
+    }
+
+    .home-hero-text {
+        padding-right: 5%;
+    }
+
+    .home-hero-text h1{
+        text-align: left;
+        margin-top: 80px;
+    }
+
+    .home-hero-text p{
+        margin:  15px 0;
+        font-size: 18px;
+    }
+    
+    .home-hero-text button{
+        font-size: 24px;
+        padding: 12px 68px;
+    }
+
+    .hero-image{
+        margin-top: 4%;
+    }
+}
+
+@media screen and (min-width:1440px){
+
+    .hero-image{
+        margin-top:  50px
     }
 }
 
 
-.card{
-    width: 86%;
+  /* cards */
+
+  .card img{
+    width: 100%;
+    margin-bottom: 20px;
 }
 
-.card h1 p{
+.card{
     text-align: center;
+    box-shadow: 2px 8px 16px #808D99 ;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10%;
+}
+
+@media screen and (min-width:768px) {
+   
+    .float-text .float-image{
+        width:380px; 
+    }
+
+    .float-text{
+        padding-left: 5%;
+    }
+
+    .card-reverse-image{
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+    
+    .card{
+        text-align: center;
+        box-shadow: 2px 8px 16px #808D99 ;
+        border-radius: 10px;
+        padding: 40px;
+        margin-bottom: 40px;
+        display: flex;
+        align-items: center;
+    }
+
+    .card h3,p{
+        text-align: left;
+        /* padding-right: 5%; */
+    }
+
+    .card p{
+        font-size: 18px;
+        font-family: 'Open Sans';
+    }
+}
+
+@media screen and (min-width:1024px) {
+   
+    .float-text .float-image{
+        width:380px;
+    }
+    .float-text{
+        padding-left: 80px;
+    }
+    
+    .card{
+        padding: 40px;
+        margin: 90px;
+    }
+
+    .card p{
+        font-size: 20px;
+        text-align: left;
+    }
+    .card h3{
+        font-size: 28px;
+        text-align: left;
+    }
+}
+
+
+.get-started {
+    margin: 20px;
+    box-shadow: 2px 4px 13px #808D99;
+    padding: 20px;
+    text-align: center;
+    background-color: #fff;;
+    border-radius: 10px;
+  
+    font-weight: 400;
+    position: absolute;
+    top: -16%;
+}
+
+.get-started h2{
+    font-size: 14px;
+}
+
+.get-started button{
+    border: none;
+    color: #fff;
+    background-color: var(--Pink);
+    border-radius: 20px;
+    font-size: 14px;
+    padding: 12px 48px;
+    cursor:  pointer;
+}
+
+@media screen and (min-width:375px){
+    .get-started {
+        margin: 16%;
+        top: -18%;
+    }
+
+    .get-started h2{
+        font-size: 12px;
+    }
+
+    .get-started button{
+        padding: 10px 40px;
+        cursor:  pointer;
+    }
+    
+}
+
+@media screen and (min-width:425px){
+    .get-started {
+        margin: 18%;
+        top: -20%;
+    }
+
+    .get-started h2{
+        font-size: 13px;
+    }
+
+    .get-started button{
+        padding: 10px 40px;
+        cursor:  pointer;
+    }
+    
+}
+
+footer{
+    background-color: var(--Very-Dark-Cyan);
+    position: relative;
+    margin-top: 50%;
+    
+}
+
+.contacts{
+    color: #fff;
+    padding: 120px 20px 20px;
+
+}
+
+.contacts img{
+    width: 35%;
+}
+
+.contacts i{
+    font-size: 14px;
+}
+
+.contacts span{
+    padding-left: 20px;
+}
+
+.contacts p{
+   font-size: 12px;
+   line-height: 28px;
+
+}
+
+.footer-info {
+    padding: 20px;
+    color: #fff;
+}
+
+.footer-info a{
+    padding: 10px; 
+    color: #fff;
+    text-decoration: none;
+    font-size: 12px;
+    display: block;
+}
+
+.social-media-handle{
+    text-align: center;
+    color: #fff;
+    padding: 10px;
+}
+
+.social-media-handle i{
+    padding: 10px;
+}
+
+.fa fa-facebook{
+    border: 1px solid #fff;
+    width: 50%;
+    height: 50%;
+}
+
+.copyright{
+    font-size: 12px;
+    color: #fff;
+    text-align: center;
+    padding-bottom: 20px;
 }
