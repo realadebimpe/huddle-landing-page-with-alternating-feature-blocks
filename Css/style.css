@@ -15,6 +15,7 @@
 body {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
     font-family: 'poppins';
 }
 
@@ -69,7 +70,7 @@ ul li {
     background-color: var(--Pink);
     border-radius: 20px;
     font-size: 14px;
-    padding: 12px 68px;
+    padding: 10px 40px;
     cursor: pointer;
     margin-bottom: 40px;
 }
@@ -125,9 +126,10 @@ footer {
     padding-top: 120px;
 }
 
-.logo-bottom{
+.logo-bottom {
     padding-left: 30px;
 }
+
 .contacts {
     color: #fff;
     padding: 0px 30px;
@@ -186,18 +188,26 @@ footer {
     padding-bottom: 20px;
 }
 
-@media screen and (max-width: 320px){
-    .header button{
-    padding: 6px;
+@media screen and (max-width: 320px) {
+    .header button {
+        padding: 6px;
     }
 }
 
 @media screen and (min-width:768px) {
-    
 
-    .logo-top{
+
+    /* .home-hero-text{
+        flex-basis: 20%;
+    } */
+
+    .logo-top {
         width: 200px;
         height: auto;
+    }
+
+    .home-hero-text h1 {
+       font-weight: 900;
     }
 
     .get-started {
@@ -209,7 +219,7 @@ footer {
         font-size: 18px;
     }
 
-    
+
     .float-text .float-image {
         width: 380px;
     }
@@ -248,21 +258,28 @@ footer {
 
 @media screen and (min-width:1024px) {
 
-    .build {
+    .home-hero {
         background-image: url('../images/bg-hero-desktop.svg');
         background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        align-self: baseline;
+        justify-content: center;
+        align-items: center;
+        text-align: left;
+        padding: 0 2%;
     }
-   
 
     .header button {
         border-radius: 20px;
-        font-size: 18px;
-        padding: 16px 64px;
+        font-size: 20px;
+        padding: 12px 40px;
         font-weight: 200;
     }
 
     .home-hero-text {
         padding-right: 5%;
+        flex-basis: 80%;
     }
 
     .home-hero-text h1 {
@@ -272,7 +289,7 @@ footer {
 
     .home-hero-text p {
         margin: 15px 0;
-        font-size: 18px;
+        font-size: 24px;
     }
 
     .home-hero-text button {
@@ -309,10 +326,12 @@ footer {
 
     .get-started h2 {
         font-size: 24px;
+        padding: 10px;
     }
 
     .get-started button {
         font-size: 18px;
+        margin-bottom: 15px;
     }
 
     .details {
@@ -323,7 +342,7 @@ footer {
     }
 
     footer {
-        padding: 120px 90px 0px 90px;
+        padding: 160px 90px 0px 90px;
     }
 
     .contacts {
@@ -366,7 +385,8 @@ footer {
     .footer-links {
         padding-right: 10px;
     }
-    .social{
+
+    .social {
         align-self: stretch;
         display: flex;
         flex-direction: column;
@@ -378,14 +398,41 @@ footer {
     }
 
     .social-media-handle i {
-        padding: 5px;
+        padding: 10px;
     }
 
 }
 
 @media screen and (min-width:1440px) {
-
+    .home-hero-text {
+        flex-basis: 60%;
+    }
     .hero-image {
         margin-top: 50px
     }
+
+    .contacts p {
+        font-size: 17px;
+        margin-bottom: 0;
+    }
+
+    .contact-links a{
+        font-size: 17px;
+    }
+
+    .get-started h2 {
+        font-size: 35px;
+        padding: 20px;
+        margin-bottom: 0;
+    }
+
+    .get-started button {
+        font-size: 24px;
+        
+    }
+
+    .copyright{
+        font-size: 12px;
+    }
+    
 }
